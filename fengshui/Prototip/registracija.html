@@ -1,0 +1,91 @@
+<!--Ivana Dragutinovic-->
+<html>
+<head>
+<title> Registracija </title>
+</head>
+<style>
+ body{
+  font-family:monospace,FreeMono;
+  background:linear-gradient(to right, LightGrey, WhiteSmoke);
+ }
+ #forma1{
+  align:middle;
+  display:block;
+  border:15px Black;
+  padding:5px;
+  width:330px;
+  font-family:monospace,FreeMono;
+  background:linear-gradient(to right, LightGrey, WhiteSmoke);
+}
+ input[type=text], [type=password], select {
+  width:100%;
+  height:30;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ }
+ button {
+  width:100;
+  height:30;
+  color:white;
+  padding:7px 7px;
+  margin:8px 0;
+  border:none;
+  border-radius: 4px;
+  font-family:monospace,FreeMono;
+  background-color: Grey;
+} 
+.divForma {
+ width:300px;
+ position:relative;
+ right:0;
+ left:400;
+}
+
+</style>
+
+<body>
+
+
+<div style="width:100%">
+<div style="float:left;width:30%">
+ <img src="slike/logoOk.png">
+</div>
+
+<div style="float:left;width:70%">
+<form id="forma1" action="logovanje.html">
+ <fieldset style="width:300;height=200">
+ Ime:<br>
+ <input type="text" name="ime"> <br><br>
+ Prezime:<br>
+ <input type="text" name="prezime"> <br><br>
+ E-mail adresa:<br>
+ <input type="text" name="email"> <br><br>
+ Korisnicko ime:<br>
+ <input type="text" name="username"> <br><br>
+ Šifra:<br>
+ <input type="password" name="password"> <br><br>
+  Potvrda šifre:<br>
+ <input type="password" name="passwordConfirm"> <br><br>
+  Opis:<br>
+ <input type="password" name="opis"> <br><br>
+<p> Izaberite tip naloga koji želite da kreirate:<br>
+ <input type="radio" name="izbor" title="Kao dizajner, bicete u mogucnosti da za druge dizajnirate prostor">Dizajnerski<br><br>
+ <input type="radio" name="izbor" title="Omogucava vam postavljanje zahteva dizajnerima">Korisnicki<br><br>
+
+ <button onclick="fZavrsi()"> Završi</button>
+</form>
+<script>
+ function fZavrsi() {
+   alert("Uspešno ste se registrovali!");
+ }
+</script>
+</div>
+
+
+</body>
+</head>
+</html>

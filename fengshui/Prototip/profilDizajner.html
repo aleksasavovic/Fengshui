@@ -1,0 +1,168 @@
+<!--Ivana Dragutinovic-->
+<html>
+<head>
+<title> Profil dizajnera</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+ body{
+  font-family:monospace,FreeMono;
+  background:linear-gradient(to right, LightGrey, WhiteSmoke);
+ }
+.header {
+  padding:3px;
+  background-color: #f1f1f1;
+  text-align:center;
+}
+.meni {
+  width:1300px;
+  overflow:hidden;
+  background:linear-gradient(to right, DimGrey, WhiteSmoke);
+  padding:20px;
+}
+.meni a{
+  float:left
+  display:block;
+  color:WhiteSmoke;
+  padding:20px 25px;
+  text-decoration:none;
+  text-align:center;
+}
+.meni a:hover{
+  background-color:LightGrey;
+}
+.meni input[type=text] {
+  display:block;
+  padding:6px;
+  border:none;
+  color:DimGray;
+  margin-bottom:-20px;
+  margin-top:-6px;
+  margin-right:5px;
+  font-size:17px;
+  font-family:monospace,FreeMono; 
+}
+.meni .search-container {
+  float:right;
+}
+.meni .search-container button {
+  float: right;
+  padding: 6px;
+  margin-bottom:-25;
+  margin-top: -10px;
+  margin-right: 5px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.meni .search-container button:hover {
+  background: #ccc;
+}
+.divForma {
+ padding:15px;
+ width:300px;
+ position:fixed;
+ right:0;
+ left:300;
+}
+table {
+ width:100%;
+}
+th, td {
+    padding: 20px;
+    text-align: left;
+}
+#slike {
+ width:35%;
+ text-align:center;
+ float:right
+ } 
+#izmena {
+  width:170;
+  height:40;
+  color:white;
+  padding:7px 7px;
+  margin:8px 0;
+  border:none;
+  border-radius: 4px;
+  font-family:monospace,FreeMono;
+  background-color: Grey;
+} 
+</style>
+
+<body>
+
+<div class="header">
+  <img src="slike/logoOk.png" align="left">
+  <img src="slike/naslov.png">
+</div>
+
+<div class="meni">
+ <a href="oglasnaTabla.html">Oglasna tabla</a>
+ <a href="dizajniranje.html">Dizajniraj</a> 
+ <a href="profilDizajner.html"> Moj profil </a>
+ <a href="galerija.html">Galerija</a>
+ <a href="logovanje.html"> Odjavi se </a>
+ <div class="search-container">
+	<form action="pretraga.html">
+		<input type="text" name="pretraga" placeholder="Pretraga.." title="Možete pretražiti dizajnera po njegovom korisnickom imenu">
+		<button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+ </div>
+</div>  
+
+
+<div style="float:left;width:65%;">
+<table>
+<tr>
+ <td> <img src="slike/user.jpg" width=180px height=150></td> 
+ <td> Profil korisnika </td>
+</tr>
+<tr>
+ <td>Ime i prezime:</td>
+ <td>Pera Peric</td> 
+</tr>
+<tr>
+ <td>E-mail adresa:</td>
+ <td>peraperic@gmail.com</td>
+<tr> 
+<tr>
+ <td>Nešto o korisniku: </td>
+ <td> Završio sam Arhitekturu na Univerzitetu u Beogradu, odsek Dizajn enterijera i time se bavim vec 10 godina. Preferiram minimalisticki stil u uredenju domova, a može se reci da mi je to uža specijalnost. </td>
+</tr>
+<tr>
+ <td> Prosecna ocena na sajtu: </td>
+ <td>  4.3/5.0 </td>
+</tr>
+<tr>
+   <td>
+ <form action="izmenaPodataka.html">
+ <button id="izmena" type=submit"> Izmeni podatke</button> 
+ </form></td>
+ <td >
+ <form action="izmenaLozinke.html">
+ <button id="izmena" type=submit"> Izmeni lozinku</button> 
+ </form></td>
+</tr>
+</table>
+</div>
+
+<div id="slike">
+<table>
+ <tr>
+  <td > Moji radovi: </td>
+  <td > Projekti na kojima trenutno radim </td> 
+ </tr>
+ <tr>
+  <td><img src="slike/livingroom.jpg" width=180px height=150></td> 
+ </tr>
+ <tr>
+  <td><img src="slike/bedroom.jpeg" width=180px height=150></td> 
+ </tr>
+ <tr>
+  <td><img src="slike/kitchen.jpg" width=180px height=150></td> 
+ </tr>
+</div>
+
+</body>
+</html>

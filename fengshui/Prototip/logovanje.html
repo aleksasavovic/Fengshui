@@ -1,0 +1,119 @@
+<!--Ivana Dragutinovic-->
+<html>
+<head>
+<title>Feng Shui</title>
+</head>
+<style>
+ body{
+  font-family:monospace,FreeMono; 
+  background:linear-gradient(to right, LightGrey, WhiteSmoke);
+ }
+ #forma1 {
+  border:15px Black;
+  padding:5px;
+  width:250px;
+  font-family:monospace,FreeMono; 
+  background:linear-gradient(to right, LightGrey, WhiteSmoke);
+ }
+ input[type=text], [type=password], select {
+  width:100%;
+  height:30;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ }
+ input[type=submit],button {
+  width:120;
+  height:30;
+  color:white;
+  padding:7px 7px;
+  margin:8px 0;
+  border:none;
+  border-radius: 4px;
+  font-family:monospace,FreeMono; 
+  background-color: Grey;
+} 
+.header {
+  align:center;  
+  padding:10px;
+}
+
+.meni {
+  overflow:hidden;
+  background-color:DimGrey;
+  padding:20px;
+}
+.meni a{
+  float:left
+  display:block;
+  color:#f2f2f2;
+  padding:20px 25px;
+  text-decoration:none;
+}
+.meni a:hover{
+  background-color:LightGrey;
+}
+.obnovaLoz {
+ color:DimGray;
+ text-decoration:underline;
+}
+</style>
+
+<body>
+<div class="header">
+</div>
+ 
+<div style="float:left; width:40%">
+  <img src="slike/logoOk.png">
+  <br>
+  <img src="slike/naslov.png">
+</div>
+
+ <div style="float:right; width:60%";>
+  <div class="meni">
+
+   <a href="dizajniranje.html">Dizajniraj</a> 
+
+   <script>
+   function fNeMoze() {
+     alert("Morate biti ulogovani!");
+   }
+   </script>
+   <a href="galerija.html">Galerija</a>
+  </div>
+  <br><br><br>
+  <form id="forma1" action="oglasnaTabla.html" >
+  <fieldset style="width:220px;height:180;">
+   E-mail:<br>
+   <input type="text" name="email">
+   <br>
+   Sifra:<br>
+   <input type="password" name="password">
+   <br><br>
+   <button onclick="fUspeh()">Uloguj se</button>  
+   <script>
+   function fUspeh() {
+     alert("Uspešno ste se ulogovali!");
+   }
+  </script>  
+  </fieldset>
+  </form>
+  <p>
+  <a class="obnovaLoz" href="zaboravljenaSifra.html"> Zaboravili ste šifru?</a>	
+  
+   
+  <form action="registracija.html">
+   Nemate nalog?   
+  <input type="submit" value="Registruj se">
+  </p>
+  </form> 
+
+
+ </div>
+
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!--Ivana Dragutinovic-->
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+ body{
+  font-family:monospace,FreeMono;
+  background:linear-gradient(to right, LightGrey, WhiteSmoke);
+ }
+.header {
+  padding:3px;
+  background-color: #f1f1f1;
+  text-align:center;
+}
+.meni {
+  width:1300px;
+  overflow:hidden;
+  background:linear-gradient(to right, DimGrey, WhiteSmoke);
+  padding:20px;
+}
+.meni a{
+  float:left
+  display:block;
+  color:WhiteSmoke;
+  padding:20px 25px;
+  text-decoration:none;
+  text-align:center;
+}
+.meni input[type=text] {
+  display:block;
+  padding:6px;
+  border:none;
+  color:DimGray;
+  margin-bottom:-20px;
+  margin-top:-6px;
+  margin-right:5px;
+  font-size:17px;
+  font-family:monospace,FreeMono; 
+}
+.meni a:hover{
+  background-color:LightGrey;
+}
+
+.meni .search-container {
+  float:right;
+}
+.meni .search-container button {
+  float: right;
+  padding: 6px;
+  margin-bottom:-25;
+  margin-top: -10px;
+  margin-right: 5px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.meni .search-container button:hover {
+  background: #ccc;
+}
+ #forma1{
+  align:middle;
+  display:block;
+  border:15px Black;
+  padding:5px;
+  width:330px;
+  font-family:monospace,FreeMono;
+  background:linear-gradient(to right, LightGrey, WhiteSmoke);
+}
+input[type=submit] {
+  width:200;
+  height:60;
+  color:white;
+  padding:7px 7px;
+  margin-top:400px;
+  border:none;
+  border-radius: 4px;
+  font-family:monospace,FreeMono; 
+  background-color: Grey;
+} 
+
+</style>
+<body>
+<div class="header">
+  <img src="slike/logoOk.png" align="left">
+  <img src="slike/naslov.png">
+</div>
+
+<div class="meni">
+ <a href="oglasnaTabla.html">Oglasna tabla</a>
+ <a href="dizajniranje.html">Dizajniraj</a> 
+ <a href="profilDizajner.html"> Moj profil </a>
+ <a href="galerija.html">Galerija</a>
+ <a href="logovanje.html"> Odjavi se </a>
+ <div class="search-container">
+	<form action="pretraga.html">
+		<input type="text" name="pretraga" placeholder="Pretraga.." title="Možete pretražiti dizajnera po njegovom korisnickom imenu">
+		<button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+ </div>
+</div>  
+
+
+<div style="width:100%">
+ <div style="float:left;width:70%">
+  <br> 
+  <img src="slike/aplikacija.png" width="854px" height="538px">
+ </div>
+ <div style="float:left;width:30%"> 
+  <form action="posaljiRad.html">
+   <input type="submit" value="Pošalji korisniku">
+  </form>
+ </div>
+
+</div>
+
+</body>
+</html>

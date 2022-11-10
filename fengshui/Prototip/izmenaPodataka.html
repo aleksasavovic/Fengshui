@@ -1,0 +1,154 @@
+<!--Ivana Dragutinovic-->
+<html>
+<head>
+<title> Izmena podataka </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+
+body{
+  font-family:monospace,FreeMono;
+  background:linear-gradient(to right, LightGrey, WhiteSmoke);
+}
+.header {
+  padding:3px;
+  background-color: #f1f1f1;
+  text-align:center;
+}
+.meni {
+  width:1300px;
+  overflow:hidden;
+  background:linear-gradient(to right, DimGrey, WhiteSmoke);
+  padding:20px;
+}
+.meni a{
+  float:left
+  display:block;
+  color:WhiteSmoke;
+  padding:20px 25px;
+  text-decoration:none;
+  text-align:center;
+}
+.meni a:hover{
+  background-color:LightGrey;
+}
+.meni input[type=text] {
+  display:block;
+  padding:6px;
+  border:none;
+  color:DimGray;
+  margin-bottom:-20px;
+  margin-top:-6px;
+  margin-right:5px;
+  font-size:17px;
+  font-family:monospace,FreeMono; 
+}
+.meni .search-container {
+  float:right;
+}
+.meni .search-container button {
+  float: right;
+  padding: 6px;
+  margin-bottom:-25;
+  margin-top: -10px;
+  margin-right: 5px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.meni .search-container button:hover {
+  background: #ccc;
+}
+#polja{
+  width:100%;
+  height:40;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ }
+#forma1{
+  align:middle;
+  display:block;
+  border:15px Black;
+  padding:5px;
+  width:330px;
+  font-family:monospace,FreeMono;
+  background:linear-gradient(to right, LightGrey, WhiteSmoke);
+}
+#spec {
+  width:100%;
+  height:80;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.divForma {
+ padding:15px;
+ width:300px;
+ position:relative;
+ right:0;
+ left:300;
+}
+.divForma button {
+  width:100;
+  height:30;
+  color:white;
+  padding:7px 7px;
+  margin:8px 0;
+  border:none;
+  border-radius: 4px;
+  font-family:monospace,FreeMono;
+  background-color: Grey;
+} 
+</style>
+
+<body>
+<div class="header">
+  <img src="slike/logoOk.png" align="left">
+  <img src="slike/naslov.png">
+</div>
+
+<div class="meni">
+ <a href="oglasnaTabla.html">Oglasna tabla</a>
+ <a href="dizajniranje.html">Dizajniraj</a> 
+ <a href="profilDizajner.html"> Moj profil </a>
+ <a href="galerija.html">Galerija</a>
+ <a href="logovanje.html"> Odjavi se </a>
+ <div class="search-container">
+	<form action="pretraga.html">
+		<input type="text" name="pretraga" placeholder="Pretraga.." title="Možete pretražiti dizajnera po njegovom korisnickom imenu">
+		<button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+ </div>
+</div>  
+
+<div class="divForma">
+<form id="forma1" action="oglasnaTabla.html" target="_blank">
+ <fieldset style="width:300;height=200">
+ Unesite novo korisnicko ime:<br>
+ <input id="polja" type="text"  name="korime"><br><br>
+  Promenite opis o sebi:<br>
+ <input type="textarea" id="spec" name="opisKor"> <br><br>
+ Dodajte profilnu fotografiju:
+ <input type="file" name="profilnaFoto"> <br><br>
+  Dodajte rad u portfolio:
+ <input type="file" name="profilnaFoto"> <br><br>
+ <button onclick="fZavrsi()"> Potvrdi </button>
+</form>
+<script>
+ function fZavrsi() {
+   alert("Uspešno ste promenili podatke!");
+ }
+</script>
+</div>
+
+
+
+</body>
+</html>
